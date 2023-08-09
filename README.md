@@ -24,8 +24,7 @@ Der Vorgang kann man abbrechen indem man <b>exit</b> statt der gewünschten Aufl
 <br>
 <h3>Wo finde ich die Datei 📂</h3>
 
-Beim ersten Start des Downloaders wird im Downloads Verzeichnis ein Unterordner <b>Youtube Downloader</b> erzeugt.<p>
-Dort kann die MP4 Datei gefunden werden.
+Beim ersten Start des Downloaders wird im Downloads Verzeichnis ein Unterordner <b>Youtube Downloader</b> erzeugt. Dort kann die MP4 Datei gefunden werden.
 <br><br>
 
 <h4>Links<h4>
