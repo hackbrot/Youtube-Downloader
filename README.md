@@ -1,4 +1,4 @@
-<h1>Youtube-Downloader ⬇️</h1>
+<h1>Youtube Downloader ⬇️</h1>
 
 <b>Ein ganz simpler Youtube Downloader als Konsolenanwendung</b>
 <br><br>
