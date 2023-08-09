@@ -4,6 +4,7 @@ import os
 
 from pathlib import Path
 from pytube import YouTube
+from pytube import innertube
 
 
 # Globale Variablen
@@ -11,6 +12,10 @@ from pytube import YouTube
 home = str(Path.home())
 outputPath = os.path.join(home, "Downloads", "Youtube Downloader")
 restricted_name_symbols = ["\\", "/", ":", "*", "?", "<", ">", "|", "#", "$", "+", "%", '"']
+
+innertube._cache_dir = os.path.join(os.getcwd(), "cache")
+innertube._token_file = os.path.join(innertube._cache_dir, 'tokens.json')
+
 # Funktion für Downloads
 
 def download():
@@ -32,7 +37,8 @@ def download():
 
         yt = YouTube(link, 
                     use_oauth = True,           # use_oauth nutzt die Authentifikation des Youtube Nutzers um Altersbegrenzte Videos herunterzuladen
-                    allow_oauth_cache = True)   # allow_oauth_cache legt den Zugangstoken im Cache ab, sodass die Abfrage nur einmal getätigt werden muss
+                    allow_oauth_cache = True    # allow_oauth_cache legt den Zugangstoken im Cache ab, sodass die Abfrage nur einmal getätigt werden muss
+                    )   
         
         # Video Details     
         
